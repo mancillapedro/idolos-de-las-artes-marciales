@@ -7,15 +7,10 @@
     <router-view />
   </div>
 </template>
+
 <script>
 export default {
   name: "App",
-  data() {
-    return {
-      oli: true,
-    };
-  },
-  methods: {},
 };
 </script>
 
@@ -41,17 +36,15 @@ nav {
 nav a {
   font-weight: bold;
   opacity: 0.5;
-  text-decoration: none;
   color: #2c3e50;
 }
-nav a:hover {
-  opacity: 1;
-}
+nav a:hover,
 nav a.router-link-exact-active {
   opacity: 1;
+  color: #0068da;
+}
+nav a.router-link-exact-active {
   cursor: default;
   pointer-events: none;
-  color: #42b983;
-  /* text-shadow: 0px 0px 16px ; */
 }
 </style>

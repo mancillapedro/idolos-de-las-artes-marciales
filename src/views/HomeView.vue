@@ -20,7 +20,7 @@
 export default {
   name: "HomeView",
   // props: {},
-  data: function () {
+  data() {
     return {
       idFighter: null,
     };
@@ -36,12 +36,6 @@ export default {
         this.$router.push(`/fighter/${this.validateFighter}`);
     },
   },
-  // watch: {},
-  // components: {},
-  // mixins: [],
-  // filters: {},
-  // -- Lifecycle Methods
-  // -- End Lifecycle Methods
 };
 </script>
 
